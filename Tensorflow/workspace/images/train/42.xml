@@ -1,0 +1,26 @@
+<annotation>
+	<folder>human</folder>
+	<filename>42.png</filename>
+	<path>C:\Users\ACER\TFODCourse\Tensorflow\workspace\images\collectedimages\human\42.png</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>528</width>
+		<height>461</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>person</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>81</xmin>
+			<ymin>91</ymin>
+			<xmax>186</xmax>
+			<ymax>274</ymax>
+		</bndbox>
+	</object>
+</annotation>

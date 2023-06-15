@@ -1,0 +1,26 @@
+<annotation>
+	<folder>1</folder>
+	<filename>62.png</filename>
+	<path>C:\Users\USER\Documents\labelImg\labelImg-master\human detection\human detection dataset\1\62.png</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>503</width>
+		<height>465</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>person</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>276</xmin>
+			<ymin>197</ymin>
+			<xmax>344</xmax>
+			<ymax>399</ymax>
+		</bndbox>
+	</object>
+</annotation>

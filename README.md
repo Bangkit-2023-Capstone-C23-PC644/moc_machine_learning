@@ -55,11 +55,71 @@ Command for evaluating:
 ```python
 python Tensorflow\models\research\object_detection\model_main_tf2.py --model_dir= Tensorflow\workspace\models\my_ssd_mobnet --pipeline_config_path= Tensorflow\workspace\models\my_ssd_mobnet\pipeline.config --checkpoint_dir= Tensorflow\workspace\models\my_ssd_mobnet
 ```
+## Installation
+Go to https://www.anaconda.com/products/individual and click the “Download” button
+Run the downloaded executable (.exe) file to begin the installation. See here for more details
+
+### Create a new Anaconda virtual environment
+Open a new anaconda prompt window
+```
+conda create -n tensorflow pip python=3.9
+```
+
+### Activate the Anaconda virtual environment
+Activating the newly created virtual environment is achieved by running the following in the Terminal window:
+```
+conda activate tensorflow
+```
+Once you have activated your virtual environment, the name of the environment should be displayed within brackets at the beggining of your cmd path specifier, e.g.:
+```
+(tensorflow) C:\Users\microsoft>
+```
+### Clone tensorflow models in local folder
+Cloning models from tensorflow github
+```
+cd ./path/foldername
+git clone https://github.com/tensorflow/models.git
+```
+### Install protocol buffer
+```
+conda install protobuf
+```
+and then doing the compilation
+```
+cd foldername/models/research
+protoc object_detection/protos/*.proto --python_out=.
+```
+### copy setup.py file into ./models/research
+```
+cd foldername/models/research
+cp object_detection/packages/tf2/setup.py .
+```
+### Install Object Detection API
+```
+#From within TensorFlow/models/research/
+python -m pip install .
+```
+### Reinstalling numpy from conda
+numpy defaults from API Installation is not compatible.
+So, need install numpy module from conda
+```
+conda install numpy
+```
+### Testing your Installation
+```
+# From within TensorFlow/models/research/
+python object_detection/builders/model_builder_tf2_test.py
+```
+### Try out the examples
+If the previous step completed successfully it means you have successfully installed all the components necessary to perform object detection using pre-trained models.
+
+If you want to play around with some examples to see how this can be done, now would be a good time to have a look at the Examples section.
 
 ## References
 
 -	https://www.coursera.org/learn/convolutional-neural-networks-tensorflow/home/welcome
--	https://www.coursera.org/learn/advanced-computer-vision-with-tensorflow/home/welcome 
+-	https://www.coursera.org/learn/advanced-computer-vision-with-tensorflow/home/welcome
+-	https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/install.html 
 -	https://youtu.be/yqkISICHH-U
 -	https://youtu.be/rRwflsS67ow
 

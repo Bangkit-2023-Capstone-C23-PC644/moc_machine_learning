@@ -1,5 +1,5 @@
 
-# Medical Overseer Control (MOC) New ML API
+# MOC Machine Learning Model
 
 Medical Oversee Control is a machine learning model that is implemented in hospital CCTV cameras. This model provides special features as artificial intelligence which is capable of detecting the presence of certain objects. In this case, the model will be implemented to calculate the number of people waiting in line at the hospital. This model was built using the Single Shot Detector (SSD) model as a pre-trained architecture. The model is then trained using the transfer learning method so that it can detect the presence of people in the image.
 
